@@ -23,6 +23,18 @@ h1 {
   margin-top: 5rem;
   color: whitesmoke;
 }
+h1 span {
+  color: yellow;
+}
+h2 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(119, 15, 81);
+}
+h2 span {
+  color: yellow;
+}
 .countdown-container {
   display: flex;
   flex-wrap: wrap;
@@ -46,24 +58,28 @@ h1 {
   font-weight: 900;
   color: white;
 }
-
-@media (max-width: 640px) {
+@media (max-width: 425px) {
   body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+    height: 100%;
   }
   h1 {
     font-weight: bold;
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1rem;
     text-align: center;
   }
 
   .big-text {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .countdown-el {
@@ -71,7 +87,42 @@ h1 {
   }
 
   .countdown-el span {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .big-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .countdown-el {
+    text-align: center;
+  }
+
+  .countdown-el span {
+    font-size: 1rem;
     font-weight: 900;
     color: white;
   }
@@ -87,14 +138,19 @@ h1 {
   }
   h1 {
     font-weight: bold;
-    font-size: 3rem;
-    margin-top: 4rem;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
     text-align: center;
   }
 
   .big-text {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .countdown-el {
@@ -118,14 +174,19 @@ h1 {
   }
   h1 {
     font-weight: bold;
-    font-size: 3rem;
-    margin-top: 4rem;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
     text-align: center;
   }
 
   .big-text {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 
   .countdown-el {
