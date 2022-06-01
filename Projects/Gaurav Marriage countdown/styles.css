@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+/* lokesh jawale */
 body {
   background-image: url(gm.jpg);
   background-size: 1400px 100%;
@@ -22,6 +23,7 @@ h1 {
   font-size: 4rem;
   margin-top: 5rem;
   color: whitesmoke;
+  text-align: center;
 }
 h1 span {
   color: yellow;
@@ -58,12 +60,14 @@ h2 span {
   font-weight: 900;
   color: white;
 }
-@media (max-width: 425px) {
+
+@media only screen and (min-width: 426px) and (max-width: 640) {
   body {
-    background-size: 100% 100%;
+    background-size: 100% 640px;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
+    text-align: center;
   }
   h1 {
     font-weight: bold;
@@ -93,42 +97,7 @@ h2 span {
   }
 }
 
-@media (max-width: 640px) {
-  body {
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100%;
-  }
-  h1 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    text-align: center;
-  }
-  h2 {
-    font-weight: 600;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .big-text {
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-
-  .countdown-el {
-    text-align: center;
-  }
-
-  .countdown-el span {
-    font-size: 1rem;
-    font-weight: 900;
-    color: white;
-  }
-}
-
-@media (max-width: 768px) {
+@media only screen and (min-width: 641px) and (max-width: 768px) {
   body {
     background-size: 768px 100%;
     background-repeat: no-repeat;
@@ -138,19 +107,19 @@ h2 span {
   }
   h1 {
     font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: 2.5rem;
+    font-size: 3rem;
+    margin-top: 4rem;
     text-align: center;
   }
   h2 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
   }
 
   .big-text {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
 
   .countdown-el {
@@ -158,13 +127,13 @@ h2 span {
   }
 
   .countdown-el span {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 900;
     color: white;
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     background-size: 1024px 100%;
     background-repeat: no-repeat;
@@ -174,19 +143,19 @@ h2 span {
   }
   h1 {
     font-weight: bold;
-    font-size: 2.5rem;
-    margin-top: 3rem;
+    font-size: 3.5rem;
+    margin-top: 4rem;
     text-align: center;
   }
   h2 {
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     text-align: center;
   }
 
   .big-text {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 
   .countdown-el {
@@ -194,13 +163,13 @@ h2 span {
   }
 
   .countdown-el span {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 900;
     color: white;
   }
 }
 
-@media (max-width: 1280px) {
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
   body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -214,7 +183,9 @@ h2 span {
     margin-top: 5rem;
     text-align: center;
   }
-
+  h2 {
+    text-align: center;
+  }
   .big-text {
     font-weight: bold;
     font-size: 6rem;
