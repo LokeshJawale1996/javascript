@@ -16,9 +16,9 @@ function countdown() {
 
   // console.log(days, hours, mins, seconds);
   daysE1.innerHTML = days;
-  hoursE1.innerHTML = hours;
-  minsE1.innerHTML = mins;
-  secondsE1.innerHTML = seconds;
+  hoursE1.innerHTML = formatTime(hours);
+  minsE1.innerHTML = formatTime(mins);
+  secondsE1.innerHTML = formatTime(seconds);
 }
 
 function formatTime(time) {
