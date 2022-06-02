@@ -1,0 +1,42 @@
+const quizData = [
+  {
+    question: "How old is Lokesh?",
+    a: "10",
+    b: "25",
+    c: "20",
+    d: "18",
+    correct: "b",
+  },
+  {
+    question: "What is the most used programming language in 2022?",
+    a: "Java",
+    b: "C",
+    c: "Python",
+    d: "JavaScript",
+    correct: "d",
+  },
+  {
+    question: "Who is the President Of India?",
+    a: "Narendra Modi",
+    b: "Amit Shah",
+    c: "Rajnath singh",
+    d: "Mamta Banarjee",
+    correct: "a",
+  },
+  {
+    question: "What does HTML stands for?",
+    a: "HyperText markup Language",
+    b: "Cascading Style Sheet",
+    c: "Json Object Notation",
+    d: "Helicopters Terminals Motorboats Lamboginis ",
+    correct: "a",
+  },
+  {
+    question: "What year was JavaScript launched?",
+    a: "2019",
+    b: "2018",
+    c: "1995",
+    d: "1994",
+    correct: "c",
+  },
+];
