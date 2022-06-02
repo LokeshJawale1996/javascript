@@ -13,7 +13,7 @@ const quizData = [
     b: "C",
     c: "Python",
     d: "JavaScript",
-    correct: "d",
+    correct: "c",
   },
   {
     question: "Who is the President Of India?",
@@ -71,6 +71,9 @@ function getSelected() {
     if (answerEl.checked) {
       answer = answerEl.id;
     }
+    if (answerEl.undefined) {
+      answer = undefined;
+    }
   });
 
   return answer;
@@ -92,12 +95,20 @@ submitBtn.addEventListener("click", () => {
       score++;
     }
   {
-    currentQuiz++;
+    if (answer1 != undefined) {
+      currentQuiz++;
+    } else {
+      alert("please select option and then submit!");
+    }
+
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
       //TODO:Show results
-      quiz.innerHTML = `<h2>You answeres correctly at ${score}/${quizData.length} questions.</h2>`;
+      quiz.innerHTML = `<h2>You answeres 
+      correctly at ${score}/${quizData.length} questions.</h2>
+      <button onclick="location.reload()">Reload</
+       button>`;
     }
   }
 });
